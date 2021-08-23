@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">  <title>EducaNic</title>
+</head>
+<body>
+
+  <nav class="nav-extended">
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">EducaNic</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="#">Docentes</a></li>
+        <li><a href="#">Estudiantes</a></li>
+        <li><a href="games.html">Juegos</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="#">Docentes</a></li>
+    <li><a href="#">Estudiantes</a></li>
+    <li><a href="games.html">Juegos</a></li>
+  </ul>
+
+  <div class="row">
+    <div class="col s12">
+      <div class="slider">
+        <ul class="slides">
+          <li>
+            <img src="https://www.queensbridge.bham.sch.uk/image/queensbridge/img-0335-72342.JPG/1000x400"> <!-- random image -->
+            <div class="caption center-align">
+              <h3>¡Adquiere nuevos conocimientos!</h3>
+            </div>
+          </li>
+          <li>
+            <img src="https://az877327.vo.msecnd.net/~/media/images/news/2017/q3/wepresent/googlification-classroom%20jpg.jpg?v=1&h=400&w=1000&crop=1"> <!-- random image -->
+            <div class="caption center-align">
+              <h3>¡Practica tus conocimientos!</h3>
+            </div>
+          </li>
+          <li>
+            <img src="https://uwaterloo.ca/touchlab/sites/ca.touchlab/files/styles/banner-wide/public/uploads/images/banners/amp-students_2-750x300_0.png?itok=3MR0RGUj"> <!-- random image -->
+            <div class="caption center-align">
+              <h3>¡Participa con tus amigos!</h3>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s12">
+      <div class="card">
+        <div class="card-image">
+          <img src="https://m.media-amazon.com/images/G/01/DeveloperBlogs/AppstoreBlogs/Influencerblogs/Opt3.png._CB479812259_.png?t=true">
+          <span class="card-title">Juegos</span>
+          <a href="games.html" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">games</i></a>
+        </div>
+        <div class="card-content">
+          <p style="text-align: justify;">Recopilación de juegos, recursos y actividades lúdicas sobre diversos temas, desde matemáticas a música u ortografía, para Infantil, Primaria y Secundaria (todos los grados). Hay una gran selección de juegos para practicar tus conocimientos.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    M.AutoInit();
+    document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.slider');
+    var instances = M.Slider.init(elems);
+    });
+
+  </script>
+</body>
+</html>
